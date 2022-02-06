@@ -1,0 +1,2 @@
+68k.lib - Sakura-IT - https://github.com/Sakura-IT/kicad-myparts (The 68020 symbol in Macintosh_LC.lib is a modification of the 68020RC symbol from here)
+Macintosh_LC.lib - Custom Symbols For the Macintosh LC by me (max1zzz)
