@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 11
 Title "Macintosh LC - Audio"
-Date "2022-01-26"
-Rev "1.0A"
+Date "2022-03-25"
+Rev "1.1A"
 Comp "max1zzz"
 Comment1 ""
 Comment2 ""
@@ -980,7 +980,7 @@ L Device:Ferrite_Bead L13
 U 1 1 62779590
 P 6565 1685
 F 0 "L13" H 6428 1639 50  0000 R CNN
-F 1 "Ferrite_Bead" H 6428 1730 50  0000 R CNN
+F 1 "Ferrite_Bead" H 6750 1460 50  0000 R CNN
 F 2 "" V 6495 1685 50  0001 C CNN
 F 3 "~" H 6565 1685 50  0001 C CNN
 	1    6565 1685

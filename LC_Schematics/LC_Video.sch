@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 11
 Title "Macintosh LC - Video & VRAM SIMM"
-Date "2022-01-26"
-Rev "1.0A"
+Date "2022-03-25"
+Rev "1.1A"
 Comp "max1zzz"
 Comment1 ""
 Comment2 ""
@@ -132,8 +132,8 @@ Wire Wire Line
 Connection ~ 2900 5175
 Wire Wire Line
 	2900 5175 2900 5220
-Text GLabel 1380 2335 0    50   Input ~ 0
-VD[0..15]
+Text GLabel 1375 2335 0    50   Input ~ 0
+DFAC_CLK
 Wire Wire Line
 	1375 2335 2550 2335
 Wire Wire Line

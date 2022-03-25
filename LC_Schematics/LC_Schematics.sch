@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 11
 Title "Macintosh LC - Power"
-Date "2022-01-26"
-Rev "1.0A"
+Date "2022-03-25"
+Rev "1.1A"
 Comp "max1zzz"
 Comment1 ""
 Comment2 ""
@@ -79,17 +79,6 @@ Wire Wire Line
 Wire Wire Line
 	2485 2025 2485 1965
 $Comp
-L Regulator_Linear:L78L08_SO8 UA10
-U 1 1 61DCF043
-P 9285 1725
-F 0 "UA10" H 9285 1967 50  0000 C CNN
-F 1 "L78L08_SO8" H 9285 1876 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9385 1925 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 9485 1725 50  0001 C CNN
-	1    9285 1725
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R90
 U 1 1 61DD2C21
 P 8390 1725
@@ -118,8 +107,6 @@ Wire Wire Line
 Connection ~ 8715 1725
 Wire Wire Line
 	8715 2025 8715 2075
-Wire Wire Line
-	9285 2075 9285 2025
 $Comp
 L power:+12V #PWR?
 U 1 1 61DD6EE5
@@ -147,10 +134,10 @@ F 3 "" H 9815 1690 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8715 2075 9285 2075
+	8715 2075 9135 2075
 Connection ~ 9285 2075
 Wire Wire Line
-	9285 2075 9715 2075
+	9285 2075 9335 2075
 $Comp
 L power:Earth #PWR?
 U 1 1 61DDC0DA
@@ -773,4 +760,35 @@ F 3 "~" H 1000 5310 50  0001 C CNN
 $EndComp
 Text Notes 9775 3655 2    50   ~ 0
 R36 Under UE2
+$Comp
+L Macintosh_LC:MC78L08_SO8 UA10
+U 1 1 62B28747
+P 9285 1725
+F 0 "UA10" H 9285 1967 50  0000 C CNN
+F 1 "MC78L08_SO8" H 9285 1876 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9385 1925 50  0001 C CIN
+F 3 "" H 9485 1725 50  0001 C CNN
+	1    9285 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9135 2025 9135 2075
+Connection ~ 9135 2075
+Wire Wire Line
+	9135 2075 9235 2075
+Wire Wire Line
+	9235 2025 9235 2075
+Connection ~ 9235 2075
+Wire Wire Line
+	9235 2075 9285 2075
+Wire Wire Line
+	9335 2025 9335 2075
+Connection ~ 9335 2075
+Wire Wire Line
+	9335 2075 9435 2075
+Wire Wire Line
+	9435 2025 9435 2075
+Connection ~ 9435 2075
+Wire Wire Line
+	9435 2075 9715 2075
 $EndSCHEMATC

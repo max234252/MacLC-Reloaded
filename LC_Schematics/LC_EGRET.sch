@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 11
 Title "Macintosh LC - EGRET"
-Date "2022-01-26"
-Rev "1.0A"
+Date "2022-03-25"
+Rev "1.1A"
 Comp "max1zzz"
 Comment1 ""
 Comment2 ""
@@ -706,7 +706,7 @@ L Transistor_BJT:BC817 Q3
 U 1 1 61F0102B
 P 7075 3525
 F 0 "Q3" V 6900 3725 50  0000 C CNN
-F 1 "BC817" V 7000 3750 50  0000 C CNN
+F 1 "BSR17A" V 7000 3750 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7275 3450 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 7075 3525 50  0001 L CNN
 	1    7075 3525
@@ -1012,4 +1012,6 @@ Wire Notes Line
 	8325 4100 8325 4825
 Wire Notes Line
 	7875 4825 8325 4825
+Text Notes 660  6560 0    100  ~ 0
+Note: D4 is a single diode originally\nBAV70 is a suitable replacement\nthat is commonly available
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 11
 Title "Macintosh LC - ASIC \"V8\""
-Date "2022-01-26"
-Rev "1.0A"
+Date "2022-03-25"
+Rev "1.1A"
 Comp "max1zzz"
 Comment1 ""
 Comment2 ""
@@ -18,7 +18,7 @@ L Macintosh_LC:V8_343S0121A UG5
 U 1 1 61EF8DA9
 P 3995 4530
 F 0 "UG5" H 3995 4630 50  0000 C CNN
-F 1 "V8_343S0121A" H 3995 4530 50  0001 C CNN
+F 1 "V8_343S0121A" H 3995 4530 50  0000 C CNN
 F 2 "" H 2395 6630 50  0001 C CNN
 F 3 "" H 2395 6630 50  0001 C CNN
 	1    3995 4530

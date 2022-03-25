@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 11
 Title "Macintosh LC - RAM & Data Buffers"
-Date "2022-01-26"
-Rev "1.0A"
+Date "2022-03-25"
+Rev "1.1A"
 Comp "max1zzz"
 Comment1 ""
 Comment2 ""
@@ -1557,30 +1557,6 @@ Wire Wire Line
 	8550 2150 8075 2150
 Connection ~ 6775 3050
 Wire Wire Line
-	2450 2250 2975 2250
-Wire Wire Line
-	2975 2250 2975 3100
-Wire Wire Line
-	2975 3100 4775 3100
-Wire Wire Line
-	4775 3100 4775 2250
-Wire Wire Line
-	4775 2250 4300 2250
-Wire Wire Line
-	4775 3100 6700 3100
-Wire Wire Line
-	6700 3100 6700 2250
-Wire Wire Line
-	6700 2250 6200 2250
-Connection ~ 4775 3100
-Wire Wire Line
-	6700 3100 8475 3100
-Wire Wire Line
-	8475 3100 8475 2250
-Wire Wire Line
-	8475 2250 8075 2250
-Connection ~ 6700 3100
-Wire Wire Line
 	2450 2450 2925 2450
 Wire Wire Line
 	2925 2450 2925 3150
@@ -1647,16 +1623,9 @@ Wire Wire Line
 	3025 2150 3025 925 
 Connection ~ 3025 2150
 Wire Wire Line
-	2975 2250 2975 1025
-Connection ~ 2975 2250
-Wire Wire Line
 	1000 925  3025 925 
-Wire Wire Line
-	1000 1025 2975 1025
 Text GLabel 1000 925  0    50   Input ~ 0
 RAM_WE
-Text GLabel 1000 1025 0    50   Input ~ 0
-RAM_OE
 Wire Wire Line
 	2450 4450 3025 4450
 Wire Wire Line
@@ -1681,30 +1650,6 @@ Wire Wire Line
 Wire Wire Line
 	8625 4475 8075 4475
 Connection ~ 6775 5400
-Wire Wire Line
-	2450 4550 2950 4550
-Wire Wire Line
-	2950 4550 2950 5450
-Wire Wire Line
-	2950 5450 4850 5450
-Wire Wire Line
-	4850 5450 4850 4550
-Wire Wire Line
-	4850 4550 4300 4550
-Wire Wire Line
-	4850 5450 6725 5450
-Wire Wire Line
-	6725 5450 6725 4575
-Wire Wire Line
-	6725 4575 6200 4575
-Connection ~ 4850 5450
-Wire Wire Line
-	6725 5450 8575 5450
-Wire Wire Line
-	8575 5450 8575 4575
-Wire Wire Line
-	8575 4575 8075 4575
-Connection ~ 6725 5450
 Wire Wire Line
 	2450 4750 2900 4750
 Wire Wire Line
@@ -1762,8 +1707,6 @@ Wire Wire Line
 	1000 3050 2875 3050
 Text GLabel 1000 5300 0    50   Input ~ 0
 RAS0
-Text GLabel 1000 5600 0    50   Input ~ 0
-RAM_OE
 Text GLabel 1000 5700 0    50   Input ~ 0
 RAM_WE
 Wire Wire Line
@@ -2247,19 +2190,130 @@ Wire Wire Line
 Connection ~ 2900 5400
 Wire Wire Line
 	2900 5400 2900 5500
-Wire Wire Line
-	2505 5600 2505 5650
-Wire Wire Line
-	2505 5650 2950 5650
-Wire Wire Line
-	2950 5650 2950 5450
-Wire Wire Line
-	1000 5600 2505 5600
-Connection ~ 2950 5450
 NoConn ~ 1550 2550
 NoConn ~ 3400 2550
 NoConn ~ 5300 2550
 NoConn ~ 7175 2550
+$Comp
+L power:GND #PWR?
+U 1 1 628875D4
+P 2530 2290
+F 0 "#PWR?" H 2530 2040 50  0001 C CNN
+F 1 "GND" H 2645 2190 50  0000 C CNN
+F 2 "" H 2530 2290 50  0001 C CNN
+F 3 "" H 2530 2290 50  0001 C CNN
+	1    2530 2290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2530 2250 2450 2250
+Wire Wire Line
+	2530 2250 2530 2290
+$Comp
+L power:GND #PWR?
+U 1 1 628FC4EC
+P 4380 2290
+F 0 "#PWR?" H 4380 2040 50  0001 C CNN
+F 1 "GND" H 4495 2190 50  0000 C CNN
+F 2 "" H 4380 2290 50  0001 C CNN
+F 3 "" H 4380 2290 50  0001 C CNN
+	1    4380 2290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4380 2250 4300 2250
+Wire Wire Line
+	4380 2250 4380 2290
+$Comp
+L power:GND #PWR?
+U 1 1 62937BD8
+P 6280 2290
+F 0 "#PWR?" H 6280 2040 50  0001 C CNN
+F 1 "GND" H 6395 2190 50  0000 C CNN
+F 2 "" H 6280 2290 50  0001 C CNN
+F 3 "" H 6280 2290 50  0001 C CNN
+	1    6280 2290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6280 2250 6200 2250
+Wire Wire Line
+	6280 2250 6280 2290
+$Comp
+L power:GND #PWR?
+U 1 1 629743CB
+P 8155 2290
+F 0 "#PWR?" H 8155 2040 50  0001 C CNN
+F 1 "GND" H 8270 2190 50  0000 C CNN
+F 2 "" H 8155 2290 50  0001 C CNN
+F 3 "" H 8155 2290 50  0001 C CNN
+	1    8155 2290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8155 2250 8075 2250
+Wire Wire Line
+	8155 2250 8155 2290
+$Comp
+L power:GND #PWR?
+U 1 1 629AFC6B
+P 8155 4615
+F 0 "#PWR?" H 8155 4365 50  0001 C CNN
+F 1 "GND" H 8270 4515 50  0000 C CNN
+F 2 "" H 8155 4615 50  0001 C CNN
+F 3 "" H 8155 4615 50  0001 C CNN
+	1    8155 4615
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8155 4575 8075 4575
+Wire Wire Line
+	8155 4575 8155 4615
+$Comp
+L power:GND #PWR?
+U 1 1 62A26911
+P 6280 4615
+F 0 "#PWR?" H 6280 4365 50  0001 C CNN
+F 1 "GND" H 6395 4515 50  0000 C CNN
+F 2 "" H 6280 4615 50  0001 C CNN
+F 3 "" H 6280 4615 50  0001 C CNN
+	1    6280 4615
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6280 4575 6200 4575
+Wire Wire Line
+	6280 4575 6280 4615
+$Comp
+L power:GND #PWR?
+U 1 1 62A62501
+P 4380 4590
+F 0 "#PWR?" H 4380 4340 50  0001 C CNN
+F 1 "GND" H 4495 4490 50  0000 C CNN
+F 2 "" H 4380 4590 50  0001 C CNN
+F 3 "" H 4380 4590 50  0001 C CNN
+	1    4380 4590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4380 4550 4300 4550
+Wire Wire Line
+	4380 4550 4380 4590
+$Comp
+L power:GND #PWR?
+U 1 1 62ADBA92
+P 2530 4590
+F 0 "#PWR?" H 2530 4340 50  0001 C CNN
+F 1 "GND" H 2645 4490 50  0000 C CNN
+F 2 "" H 2530 4590 50  0001 C CNN
+F 3 "" H 2530 4590 50  0001 C CNN
+	1    2530 4590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2530 4550 2450 4550
+Wire Wire Line
+	2530 4550 2530 4590
 Wire Bus Line
 	2750 3450 2750 5850
 Wire Bus Line
@@ -2279,7 +2333,13 @@ Wire Bus Line
 Wire Bus Line
 	3000 6300 3000 7000
 Wire Bus Line
+	10200 1050 10200 4075
+Wire Bus Line
 	10150 1975 10150 4625
+Wire Bus Line
+	9000 1050 9000 4075
+Wire Bus Line
+	8950 1975 8950 4300
 Wire Bus Line
 	1250 3325 1250 4750
 Wire Bus Line
@@ -2302,10 +2362,4 @@ Wire Bus Line
 	4600 5850 4600 6800
 Wire Bus Line
 	1400 5850 1400 6800
-Wire Bus Line
-	8950 1975 8950 4300
-Wire Bus Line
-	9000 1050 9000 4075
-Wire Bus Line
-	10200 1050 10200 4075
 $EndSCHEMATC
