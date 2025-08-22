@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name Macintosh_LC)(type Legacy)(uri ${KIPRJMOD}/lib/Macintosh_LC.lib)(options "")(descr ""))
-)
